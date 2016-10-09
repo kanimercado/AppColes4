@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+
+
+
+    <tab
+        id="@+id/news"
+        title="@string/tab_news"
+        barColorWhenSelected="@color/colorPrimary"
+        icon="@drawable/ic_home"
+        />
+
+    <tab
+        id="@+id/assistance"
+        title="@string/tab_assistance"
+        barColorWhenSelected="@color/colorPrimary"
+        icon="@drawable/ic_search"
+        />
+
+    <tab
+        id="@+id/interviews"
+        title="@string/tab_interviews"
+        barColorWhenSelected="@color/colorPrimary"
+        icon="@drawable/ic_user"
+        />
+
+    <tab
+        id="@+id/calendar"
+        title="@string/tab_calendar"
+        barColorWhenSelected="@color/colorPrimary"
+        icon="@drawable/ic_user"
+        />
+</tabs>
