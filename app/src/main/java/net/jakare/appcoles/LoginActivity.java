@@ -20,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
         // 0 = Profesor    1 = Padre
-        int tipoCLiente = 0;
+        int tipoCLiente = 1;
 
         if (tipoCLiente == 0) {
 
