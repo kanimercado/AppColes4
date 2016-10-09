@@ -18,9 +18,8 @@ public class LoginActivity extends AppCompatActivity {
 
     public void goHome(View view){
 
-
         // 0 = Profesor    1 = Padre
-        int tipoCLiente = 1;
+        int tipoCLiente = 0;
 
         if (tipoCLiente == 0) {
 

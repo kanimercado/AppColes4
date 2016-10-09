@@ -5,6 +5,7 @@ import android.support.annotation.IdRes;
 import android.support.v4.app.FragmentTabHost;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
@@ -35,6 +36,10 @@ public class PadreActivity extends AppCompatActivity {
                                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                                 .addToBackStack(null).commit();
 
+                        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+                        setSupportActionBar(toolbar);
+                        getSupportActionBar().setTitle("Noticias");
+
                         break;
 
                 }
@@ -43,4 +48,6 @@ public class PadreActivity extends AppCompatActivity {
 
 
     }
+
+
 }

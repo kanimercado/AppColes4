@@ -31,7 +31,7 @@ public class ProfesorTodasFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_profesor_todas, container, false);
-        //showToolbar(getResources().getString(R.string.tab_news), false, view);
+//        showToolbar(getResources().getString(R.string.tab_news), false, view);
         RecyclerView picturesRecycler = (RecyclerView) view.findViewById(R.id.pictureRecycler);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());

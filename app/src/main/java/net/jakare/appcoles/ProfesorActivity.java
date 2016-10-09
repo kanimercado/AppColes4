@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v4.app.FragmentTabHost;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
@@ -32,9 +33,7 @@ public class ProfesorActivity extends AppCompatActivity {
                     case R.id.news:
 
 
-//                       Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//                       setSupportActionBar(toolbar);
-//                       getSupportActionBar().setTitle("Noticias");
+
 
                         setContentView(R.layout.activity_profesor);
                         mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
@@ -46,6 +45,10 @@ public class ProfesorActivity extends AppCompatActivity {
                         mTabHost.addTab(
                                 mTabHost.newTabSpec("tab2").setIndicator("Mias", null),
                                 ProfesorMiasFragment.class, null);
+
+                        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+                        setSupportActionBar(toolbar);
+                        getSupportActionBar().setTitle("Noticias");
 
                         break;
 

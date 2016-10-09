@@ -47,10 +47,12 @@ public class ProfesorMiasFragment extends Fragment {
         return view;
     }
 
+
+
     public ArrayList<Picture> buidPictures(){
         ArrayList<Picture> pictures = new ArrayList<>();
-        pictures.add(new Picture("http://images.freeimages.com/images/previews/c73/caring-teacher-1622554.jpg", "Reunión Padres de familia", "20/09/16", "3 Me Gusta", "Se realizará en oficinas..."));
-        pictures.add(new Picture("http://images.freeimages.com/images/previews/a0f/soccer-league-2-1478116.jpg", "Entrenamiento de futbol", "22/09/16", "10 Me Gusta", "En la cancha principal"));
+        pictures.add(new Picture("http://images.freeimages.com/images/previews/a0f/soccer-league-2-1478116.jpg", "Reunión Padres de familia", "20/09/16", "3 Me Gusta", "Se realizará en oficinas..."));
+        pictures.add(new Picture("http://images.freeimages.com/images/previews/c73/caring-teacher-1622554.jpg", "Entrenamiento de futbol", "22/09/16", "10 Me Gusta", "En la cancha principal"));
         pictures.add(new Picture("http://images.freeimages.com/images/previews/b92/school-bus-1525654.jpg", "Paro de transporte", "23/09/16", "9 Me Gusta", "Debido al paro de transportes se suspenden las clases"));
         return pictures;
     }

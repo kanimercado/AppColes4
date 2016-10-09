@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="net.jakare.appcoles">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,9 +19,22 @@
             </intent-filter>
         </activity>
         <activity android:name=".ListaCursosActivity" />
-        <activity android:name=".PadreActivity" />
+        <activity android:name=".PadreActivity"
+            android:parentActivityName=".LoginActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
+
+            />
         <activity android:name=".ProfesorActivity" />
-        <activity android:name=".view.fragment.ProfesorNoticiaDetailActivity"></activity>
+
+
+
+
+
+        <activity android:name=".view.fragment.NoticiaDetailActivity"></activity>
     </application>
 
 </manifest>

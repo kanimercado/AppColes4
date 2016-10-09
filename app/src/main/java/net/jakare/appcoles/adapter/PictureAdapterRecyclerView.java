@@ -16,7 +16,7 @@ import com.squareup.picasso.Picasso;
 
 import net.jakare.appcoles.R;
 import net.jakare.appcoles.model.Picture;
-import net.jakare.appcoles.view.fragment.ProfesorNoticiaDetailActivity;
+import net.jakare.appcoles.view.fragment.NoticiaDetailActivity;
 
 import java.util.ArrayList;
 
@@ -54,7 +54,7 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
         holder.pictureCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(activity, ProfesorNoticiaDetailActivity.class);
+                Intent intent = new Intent(activity, NoticiaDetailActivity.class);
                 intent.putExtra("picture", picture.getPicture());
                 intent.putExtra("title", picture.getTitle());
                 intent.putExtra("time", picture.getTime());
